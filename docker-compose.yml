@@ -4,7 +4,9 @@ services:
     container_name: clickhouse
     ports:
       - "8123:8123"
-      - "9000:9000"
+    environment:
+      - CLICKHOUSE_USER=myuser
+      - CLICKHOUSE_PASSWORD=mypassword
     volumes:
       - clickhouse_data:/var/lib/clickhouse
     restart: unless-stopped
