@@ -1,0 +1,10 @@
+[project]
+name = "clickhouse-helper"
+version = "0.1.0"
+description = "A project for learning ClickHouse."
+readme = "README.md"
+authors = [
+    { name = "fiskov", email = "fiskov@kru.ru" }
+]
+requires-python = ">=3.14"
+dependencies = []
